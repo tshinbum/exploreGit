@@ -22,11 +22,13 @@ ALL_BRANCHES=""
 while [ $branch -lt $MAX_BRANCHES ]; do
     git checkout -b B$branch
     create_add_commit fileB$branch
-    let branch=$branch+1
     ALL_BRANCHES="$ALL_BRANCHES B$branch"
+    let branch=$branch+1
 done
 
 git checkout master
 git branch
+echo git merge $ALL_BRANCHES
 git merge $ALL_BRANCHES
+git branch -d $ALL_BRANCHES
 git branch
