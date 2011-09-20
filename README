@@ -18,8 +18,14 @@
   on a new branch. goes back to master and deletes the new branch.
   tries to purge unreachable objects.
   posted on git mailing list
+   --> received some very elaborate replies.
   creates the subdirectory
     dead_end
 
 . tree_Inspection.sh
   loop over git objects
+
+. mk_multi_merge.sh
+  create a repo with N branches, commits into them and them merges all together
+  creates the subdirectoy
+    multi_merge
