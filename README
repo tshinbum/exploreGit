@@ -1,1 +1,25 @@
-My playground
+
+. executor.sh
+  script which executes another script line by line and prints each command.
+  a more complicated way to do "set -x"
+  usage:
+    ./executor.sh distWorkflowWithBranches.sh
+
+. distWorkflowWithBranches.sh
+  a workflow with a master repository, a feature branch
+  and a verification repo where the feature is tested, then
+  merged upstream into main.
+  creates the subdirectories
+    FEATURE
+    MASTER
+    VERIFICATION
+. mk_dead_end.sh
+  creates a repo, commits, goes back a step, creates some more commits
+  on a new branch. goes back to master and deletes the new branch.
+  tries to purge unreachable objects.
+  posted on git mailing list
+  creates the subdirectory
+    dead_end
+
+. tree_Inspection.sh
+  loop over git objects
