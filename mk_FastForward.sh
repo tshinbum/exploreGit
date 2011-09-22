@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TARGET=fast_forward
+TARGET=fast_forward_testdir
 
 create_add_commit () {
     # $1..filename

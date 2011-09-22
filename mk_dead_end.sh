@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DEAD=dead_end
+DEAD=dead_end_testdir
 
 rm -rf $DEAD
 mkdir $DEAD

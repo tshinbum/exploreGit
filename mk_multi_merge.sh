@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TARGET=multi_merge
+TARGET=multi_merge_testdir
 
 create_add_commit () {
     # $1..filename
